@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="window">
+        <div class="left">
+            <form id="form" oninput="checkData()">
+                <p class="title">Login</p>
+                <input type="text" class="input" placeholder="Enter login" id="login">
+                <p class="title">Password</p>
+                <input type="password" class="input" placeholder="Enter password" id="password">
+                <p class="title">Email address</p>
+                <input type="text" class="input" placeholder="Enter email" id="email">
+                <input type="button" value="Add user" class="button" id="addUser" onclick="addUsers()">
+                <input type="button" value="Edit user" class="button hide" id="editUser" onclick="saveEditUser()">
+
+            </form>
+        </div>
+        <div class="right" id="right">
+            <table id="table">
+                <thead>
+                    <tr>
+                        <td><p class="title-table one">#</p></td>
+                        <td><p class="title-table two">Login</p></td>
+                        <td><p class="title-table three">Password</p></td>
+                        <td><p class="title-table four">Email</p></td>
+                        <td><p class="title-table five ">Edit</p></td>
+                        <td><p class="title-table six">Delete</p></td>
+
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+        <script src="main.js"></script>
+</body>
+</html>
